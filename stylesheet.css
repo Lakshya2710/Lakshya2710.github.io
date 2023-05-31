@@ -47,6 +47,15 @@ nav{
     overflow-y: hidden;
     height: 100vh;
 }
+.flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul .flex li:hover{
+    background: slategrey;
+}
 main{
     grid-area: main;
     background-color: rgb(48, 47, 47);
