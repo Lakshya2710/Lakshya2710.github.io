@@ -25,7 +25,7 @@ li{
     width: 100%;
     height: 100%;
     grid-template-columns: 0.3fr 1fr 1fr;
-    grid-template-rows:0.2fr 2fr;
+    grid-template-rows:0.1fr 2fr;
     grid-template-areas:
     "sidebar header header"
     "sidebar main main"
@@ -38,13 +38,16 @@ header{
     background-color: #1e86fdec;
     padding:5px;
     border: solid black;
-    display: flex;
+    display:flex;
     justify-content: space-between;
+    align-items: center;
 }
 nav{
     grid-area: sidebar;
     background-color: rgb(30, 12, 12);
     overflow-y: hidden;
+    transition: all 0.5sec;
+    -webkit-transition: all 0.5sec;
     height: 100vh;
 }
 .flex{
@@ -59,8 +62,9 @@ nav ul .flex li:hover{
 main{
     grid-area: main;
     background-color: rgb(48, 47, 47);
-    height: 100%;
+    height: 97%;
     width: 100%;
+    padding: 0 7px;
     display: grid;
     grid-gap: 9px;
     overflow: hidden;
@@ -100,6 +104,9 @@ main{
     grid-area: card4;
     background-color: #1e86fdec;
     border-radius: 7px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
 }
 .card5{
     grid-area: card5;
@@ -123,4 +130,45 @@ main{
     height: 100%;
     width:100%;
     text-align: left;
+}
+nav ul li{
+    width: 100%;
+    margin:25px 0;
+    padding:0;
+}
+.card3 img{
+    width:100%;
+    max-height:85%;
+}
+.card5 img{
+    width:100%;
+    height:100%;
+}
+.card6 img{
+    width:100%;
+    height:100%;
+}
+.card2 img{
+    width:100%;
+    max-height:100%;
+}
+
+.num{
+    font-size: 45px;
+}
+.check em{
+    font-size: 17px;
+}
+.one{
+    padding: 12px;
+}
+main div em{
+    font-size: 25px;
+    padding: 3px;
+}
+.card4 div{
+    padding:20px;
+}
+header .searchbar{
+    align-items: center;
 }
