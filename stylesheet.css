@@ -51,7 +51,7 @@ main{
     "card2 card3 card3 card4"
     "card5 card5 card6 card6"
 }
-/*.card1{
+.card1{
     grid-area: card1;
     background-color: #15dd9e;
     border-radius: 7px;
@@ -102,4 +102,4 @@ main{
     height: 100%;
     width:100%;
     text-align: left;
-}*/
+}
