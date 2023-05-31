@@ -198,3 +198,39 @@ header .searchbar{
         display: none;
     }
 }
+@media screen and (max-width:570px){
+    .maincontainer{
+        .maincontainer{
+            display:grid;
+            grid-template-columns: 10% 90%;
+            grid-template-rows: 0.1fr 2fr;
+            grid-template-areas: 
+            "sidebar header"
+            "sidebar main"
+        }
+    }
+    main{
+        background-color:slategrey;
+        display: flex;
+        box-sizing: border-box;
+        flex-flow: row;
+        flex-wrap: wrap;
+        overflow-y: auto;
+    }
+    .card1, .card2 ,.card3,.card5, .card6, .card7{
+        height:auto;
+        flex-grow: 1;
+    }
+    .card4{
+        height:300px;
+        flex-grow: 1;
+        overflow-y: auto;
+    }
+    .del{
+        display: none;
+    }
+    .search{
+        display: none;
+    }
+    
+}
