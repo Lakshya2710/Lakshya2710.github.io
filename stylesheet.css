@@ -182,7 +182,7 @@ header .searchbar{
         "sidebar main"
     }
     main{
-        background-color:slategrey;
+        background-color: rgb(48, 47, 47);
         box-sizing: border-box;
         display:grid;
         grid-template-columns: 3fr 2fr;
@@ -210,7 +210,7 @@ header .searchbar{
         }
     }
     main{
-        background-color:slategrey;
+        background-color: rgb(48, 47, 47);
         display: flex;
         box-sizing: border-box;
         flex-flow: row;
