@@ -172,3 +172,29 @@ main div em{
 header .searchbar{
     align-items: center;
 }
+@media screen and (max-width:900px){
+    .maincontainer{
+        display:grid;
+        grid-template-columns: 10% 90%;
+        grid-template-rows: 0.1fr 2fr;
+        grid-template-areas: 
+        "sidebar header"
+        "sidebar main"
+    }
+    main{
+        background-color:slategrey;
+        box-sizing: border-box;
+        display:grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 0.2fr 0.5fr 1fr 1.5fr 2fr;
+        grid-template-areas: 
+        "card7 card7"
+        "card1 card3"
+        "card4 card3"
+        "card4 card2"
+        "card5 card6"    
+    }
+    .del{
+        display: none;
+    }
+}
