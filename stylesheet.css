@@ -10,6 +10,16 @@ body{
     text-align: center;
     color: white;
 }
+a,h1,h2,h3{
+    text-decoration: none;
+    color: white;
+}
+li{
+    list-style-type: none;
+    text-decoration: none;
+    margin:20px 2px;
+    padding:0;
+}
 .maincontainer{
     display: grid;
     width: 100%;
@@ -28,6 +38,8 @@ header{
     background-color: #1e86fdec;
     padding:5px;
     border: solid black;
+    display: flex;
+    justify-content: space-between;
 }
 nav{
     grid-area: sidebar;
